@@ -53,7 +53,7 @@ const endGame = (message) => {
   userInput.setAttribute("disabled", "");
   userInput.placeholder = "";
   button.innerHTML = "Start Game Again";
-  h1.textContent = message;
+  h1.textContent = `${message} number is ${randomNumber}`;
   hint.textContent = "";
   remaining_chance.innerHTML = "0";
   playGame = false;
