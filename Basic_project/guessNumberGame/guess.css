@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #212121;
+    color: #fff;
+
+}
+
+.container {
+    margin: auto;
+    width: 40%;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.submit {
+    margin: 10px;
+    width: 70%;
+    padding: 5px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    background-color: #ccc;
+}
+
+
+input {
+    width: 65%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.start {
+
+    width: max-content;
+    cursor: pointer;
+    margin: auto;
+}
+
+.endgame {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
