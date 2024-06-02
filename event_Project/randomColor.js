@@ -20,11 +20,14 @@ let interval;
 
 const StartChangeColor = () => {
   console.log("startChange call");
-  interval = setInterval(generateRandom, 1000);
+  if (!interval) {
+    interval = setInterval(generateRandom, 500);
+  }
 };
 
 const stopChangeColor = () => {
   clearInterval(interval);
+  interval = null;
 };
 
 start.addEventListener("click", StartChangeColor);
