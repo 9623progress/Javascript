@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button" class="button">Click me</button>
+  </body>
+  <script>
+    class Button {
+      constructor() {
+        this.server = "http://localhost:3000";
+        this.library = "react";
+        console.log("inside class");
+        document
+          .querySelector(".button")
+          .addEventListener("click", this.handleClick.bind(this));
+      }
+
+      //bind is used un early react most to bind the reference
+      //   means if function is call inside function then provide the refernce of all the context of class to that function inside bind reference of this is pass
+      handleClick() {
+        console.log("clicked");
+        console.log(this);
+      }
+    }
+
+    const butt = new Button();
+  </script>
+</html>
